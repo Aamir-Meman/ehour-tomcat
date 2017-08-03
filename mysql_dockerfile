@@ -1,0 +1,9 @@
+FROM mysql:latest
+#VOLUME /Users/aamir2292/Desktop/ehour-compose/boo:/
+ENV MYSQL_ROOT_PASSWORD=root
+ENV MYSQL_DATABASE=ehour
+#ENV MYSQL_USER=root
+#ENV MYSQL_PASSWORD=root
+COPY mysqldump.sql /docker-entrypoint-initdb.d
+#CMD mysql --h 0.0.0.0:3306 -u root -proot ehour < dump.sql
+#COPY dump.sql /docker-entrypoint-initdb.d

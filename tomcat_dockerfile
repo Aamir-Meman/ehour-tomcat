@@ -1,0 +1,41 @@
+FROM tomcat:latest
+
+# command to the root
+RUN cd ~
+
+# command to the directory opt
+RUN cd /opt
+
+# make directory
+RUN mkdir ehour
+
+# command on ehour
+RUN cd ehour
+
+
+# :
+#
+#ADD foo /opt/ehour/
+
+# Copy the required file in particular location
+# COPY foo/* opt/ehour/
+
+# Update the environment
+RUN apt-get update
+
+# Install the vim
+RUN apt-get install -y vim
+
+# Copy server.xml to the conf
+COPY server.xml /usr/local/tomcat/conf/server.xml
+
+# set environment variable
+COPY setenv.sh /usr/local/tomcat/bin/setenv.sh
+
+#Give the permission for setenv.sh
+RUN chmod +x /usr/local/tomcat/bin/setenv.sh
+
+
+
+
+
