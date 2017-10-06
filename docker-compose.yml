@@ -1,5 +1,4 @@
 version: '3'
-
 services:
    db:
     build:
@@ -12,18 +11,36 @@ services:
 
    tomcat:
      build:
-         context: .
-         dockerfile: tomcat_dockerfile
+       context: .
+       dockerfile: tomcat_dockerfile
      depends_on:
        - db
      image: tomcat:bitnami
      volumes:
           - ./foo:/opt/ehour/ 
-          - tomcathome:/usr/local/tomcat/
      ports:
        - "8888:8080"
      links:
        - db:mysql
-volumes:
-     tomcathome:
-         driver: local
+   
+   seleniumhub:
+        image: selenium/hub
+        ports:
+           - 4444:4444
+  
+   firefoxnode:
+        image: selenium/node-firefox-debug
+        environment:
+           - HUB_PORT_4444_TCP_ADDR=hub
+        ports:
+           - 4577
+        links:
+            - seleniumhub:hub
+   chromenode:
+        image : selenium/node-chrome-debug
+        environment:
+           - HUB_PORT_4444_TCP_ADDR=hub
+        ports:
+            - 4578
+        links:
+            - seleniumhub:hub

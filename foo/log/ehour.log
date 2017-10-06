@@ -3222,3 +3222,687 @@ Caused by: com.mchange.v2.resourcepool.CannotAcquireResourceException: A Resourc
 08-03@17:47:14 INFO  org.apache.wicket.resource.PropertiesFactory - Loading properties files from /opt/ehour/resources/i18n/EhourWebApplication.properties with loader org.apache.wicket.resource.IsoPropertiesFilePropertiesLoader@5abf52e5
 08-03@17:47:14 INFO  org.apache.wicket.resource.PropertiesFactory - Loading properties files from jar:file:/usr/local/tomcat/webapps/ehour/WEB-INF/lib/wicket-core-6.19.0.jar!/org/apache/wicket/Application.properties with loader org.apache.wicket.resource.IsoPropertiesFilePropertiesLoader@5abf52e5
 08-03@17:47:14 INFO  org.apache.wicket.resource.PropertiesFactory - Loading properties files from jar:file:/usr/local/tomcat/webapps/ehour/WEB-INF/lib/wicket-core-6.19.0.jar!/org/apache/wicket/Application.properties with loader org.apache.wicket.resource.IsoPropertiesFilePropertiesLoader@5abf52e5
+10-06@17:57:15 INFO  net.rrm.ehour.ui.listener.EnvInitListener - EHOUR_HOME set to /opt/ehour
+10-06@17:57:15 INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+10-06@17:57:15 INFO  org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Oct 06 17:57:15 UTC 2017]; root of context hierarchy
+10-06@17:57:15 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-propertyconfig.xml]
+10-06@17:57:15 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-dbconnectivity.xml]
+10-06@17:57:15 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-service-ehourconfig.xml]
+10-06@17:57:16 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-service-scanner.xml]
+10-06@17:57:16 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-service.xml]
+10-06@17:57:16 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-security.xml]
+10-06@17:57:16 INFO  org.springframework.security.core.SpringSecurityCoreVersion - You are running with Spring Security Core 3.2.4.RELEASE
+10-06@17:57:16 INFO  org.springframework.security.config.SecurityNamespaceHandler - Spring Security 'config' module version is 3.2.4.RELEASE
+10-06@17:57:16 WARN  org.springframework.security.config.http.MatcherType - 'path-type' is deprecated. Please use 'request-matcher' instead.
+10-06@17:57:16 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'passwordEncoder': replacing [Generic bean: class [org.springframework.security.authentication.encoding.ShaPasswordEncoder]; scope=; abstract=false; lazyInit=true; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [context-service.xml]] with [Generic bean: class [org.springframework.security.authentication.encoding.ShaPasswordEncoder]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [context-security.xml]]
+10-06@17:57:16 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-cache.xml]
+10-06@17:57:16 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-wicket.xml]
+10-06@17:57:16 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-versioncheck.xml]
+10-06@17:57:16 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-service-scanner-nisum.xml]
+10-06@17:57:16 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-dbconnectivity-nisum.xml]
+10-06@17:57:16 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'org.springframework.transaction.config.internalTransactionAdvisor': replacing [Root bean: class [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; factoryMethodName=transactionAdvisor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]]
+10-06@17:57:16 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'taskScheduler': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=reminderConfig; factoryMethodName=taskScheduler; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [net/rrm/ehour/reminder/ReminderConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=timesheetLockConfig; factoryMethodName=taskScheduler; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [net/rrm/ehour/timesheet/service/TimesheetLockConfig.class]]
+10-06@17:57:16 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'configureScheduler': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=reminderConfig; factoryMethodName=configureScheduler; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [net/rrm/ehour/reminder/ReminderConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=timesheetLockConfig; factoryMethodName=configureScheduler; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [net/rrm/ehour/timesheet/service/TimesheetLockConfig.class]]
+10-06@17:57:17 INFO  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from file [/opt/ehour/conf/ehour.properties]
+10-06@17:57:17 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10-06@17:57:17 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'datasourceConfiguration' of type [class net.rrm.ehour.persistence.datasource.DatasourceConfiguration$$EnhancerBySpringCGLIB$$af6cfce9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10-06@17:57:17 INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+10-06@17:57:17 INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+10-06@17:57:17 INFO  net.rrm.ehour.persistence.datasource.SupportedDatabases - Using driver class: com.mysql.jdbc.Driver
+10-06@17:57:17 INFO  net.rrm.ehour.persistence.datasource.SupportedDatabases - DatasourceConfiguration{databaseType='mysql', driver='com.mysql.jdbc.Driver', url='jdbc:mysql://mysql:3306/ehour?zeroDateTimeBehavior=convertToNull&amp', username='*****', password='*****', checkoutTimeout=10000, connectionPool=c3p0}
+10-06@17:57:17 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'createDatasource' of type [class com.mchange.v2.c3p0.ComboPooledDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10-06@17:57:17 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'hibernateConfiguration' of type [class net.rrm.ehour.persistence.appconfig.HibernateConfiguration$$EnhancerBySpringCGLIB$$1662dbb0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10-06@17:57:17 INFO  net.rrm.ehour.persistence.appconfig.HibernateConfiguration - Using database type: mysql
+10-06@17:57:17 INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+10-06@17:57:17 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.7.Final}
+10-06@17:57:17 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+10-06@17:57:17 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+10-06@17:57:18 INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 10000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqx2bn9q1vdlr415fss8l|771992d9, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqx2bn9q1vdlr415fss8l|771992d9, idleConnectionTestPeriod -> 30, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://mysql:3306/ehour?zeroDateTimeBehavior=convertToNull&amp, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 10, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+10-06@17:57:18 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+10-06@17:57:19 INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+10-06@17:57:19 INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+10-06@17:57:19 INFO  org.hibernate.cache.spi.UpdateTimestampsCache - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+10-06@17:57:19 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+10-06@17:57:19 INFO  org.hibernate.cache.internal.StandardQueryCache - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+10-06@17:57:19 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+10-06@17:57:19 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 4.3.2.Final
+10-06@17:57:19 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.TimesheetEntry]; using defaults.
+10-06@17:57:19 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.BinaryConfiguration]; using defaults.
+10-06@17:57:19 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.ProjectAssignment]; using defaults.
+10-06@17:57:19 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.EmployeeType]; using defaults.
+10-06@17:57:19 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.UserDepartment]; using defaults.
+10-06@17:57:19 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Country]; using defaults.
+10-06@17:57:19 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.TimesheetLock]; using defaults.
+10-06@17:57:19 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.User]; using defaults.
+10-06@17:57:19 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Audit]; using defaults.
+10-06@17:57:19 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Location]; using defaults.
+10-06@17:57:19 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Configuration]; using defaults.
+10-06@17:57:19 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.TimesheetComment]; using defaults.
+10-06@17:57:19 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Customer]; using defaults.
+10-06@17:57:19 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Region]; using defaults.
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.SchemaValidator - HHH000229: Running schema validator
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.SchemaValidator - HHH000102: Fetching database metadata
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.AUDIT
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [audit_id, user_id, success, audit_date, action, audit_action_type, user_fullname, page, parameters]
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.CONFIGURATION
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [config_value, config_key]
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.CONFIGURATION_BIN
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [config_value, metadata, config_key]
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.COUNTRY
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [country_name, country_id]
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.CUSTOMER
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [code, name, description, active, customer_id]
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.EMPLOYEE_TYPE
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [employee_type_name, employee_type_id]
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.LOCATION
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [location_name, region_id, location_id]
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.MAIL_LOG
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [mail_event, mail_log_id, mail_to, success, timestamp]
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.PROJECT
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [project_id, default_project, contact, name, description, active, project_code, project_manager, customer_id, billable]
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.PROJECT_ASSIGNMENT
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [assignment_id, date_start, role, project_id, user_id, hourly_rate, assignment_type_id, active, allotted_hours, notify_pm_on_overrun, date_end, allotted_hours_overrun]
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.PROJECT_ASSIGNMENT_TYPE
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [assignment_type_id, assignment_type]
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.REGION
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [region_id, region_name, country_id]
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.TIMESHEET_COMMENT
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [user_id, comment_date, comment]
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.TIMESHEET_ENTRY
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [assignment_id, hours, employee_type, timesheet_status, comment, update_date, location_id, entry_date]
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.TIMESHEET_LOCK
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [date_start, name, date_end, lock_id]
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.TIMESHEET_LOCK_EXCLUSION
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [user_id, lock_id]
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.USERS
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [approver, salt, department_id, last_name, active, password, employee_type, user_id, first_name, worklocation, email, country_id, username]
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.USER_DEPARTMENT
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [code, department_id, timezone, name, manager_user_id, parent_department_id]
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.USER_ROLE
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [role, name]
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.USER_TO_DEPARTMENT
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [department_id, user_id]
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.USER_TO_USERROLE
+10-06@17:57:19 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [role, user_id]
+10-06@17:57:20 INFO  net.rrm.ehour.config.EhourConfigJdbc - Configuration loaded from database: net.rrm.ehour.config.EhourConfigJdbc@c03dbd1[
+  completeDayHours=8.0
+  isShowTurnover=true
+  currencySymbol=$
+  currencyCode=USD
+]
+10-06@17:57:21 INFO  net.rrm.ehour.config.TranslationDiscovery - Looking for translations in /opt/ehour/resources/i18n
+10-06@17:57:21 INFO  net.rrm.ehour.config.TranslationDiscovery - Found translation file for English (EhourWebApplication.properties)
+10-06@17:57:21 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService  'taskScheduler'
+10-06@17:57:21 INFO  net.rrm.ehour.timesheet.service.IScheduleTimesheetLock - Per configuration, Timesheet lock is disabled.
+10-06@17:57:21 INFO  org.springframework.ui.freemarker.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [Root WebApplicationContext: startup date [Fri Oct 06 17:57:15 UTC 2017]; root of context hierarchy] and template loader path [classpath:/emailTemplates/]
+10-06@17:57:21 INFO  org.springframework.cache.ehcache.EhCacheManagerFactoryBean - Initializing EhCache CacheManager
+10-06@17:57:21 INFO  org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [public final scala.collection.immutable.List net.rrm.ehour.reminder.IFindUsersWithoutSufficientHours.net$rrm$ehour$reminder$IFindUsersWithoutSufficientHours$$toWeekDays$1(scala.Tuple2)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+10-06@17:57:21 INFO  org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [public final boolean net.rrm.ehour.reminder.IFindUsersWithoutSufficientHours.net$rrm$ehour$reminder$IFindUsersWithoutSufficientHours$$coversReminderDays$1(scala.collection.immutable.List,org.joda.time.LocalDate,org.joda.time.LocalDate,scala.collection.immutable.List)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+10-06@17:57:21 INFO  org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [public final org.apache.log4j.Logger net.rrm.ehour.reminder.ReminderService.net$rrm$ehour$reminder$ReminderService$$LOGGER()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+10-06@17:57:21 INFO  org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [private final org.joda.time.format.DateTimeFormatter net.rrm.ehour.reminder.ReminderService.Formatter()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+10-06@17:57:21 INFO  org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [public final java.lang.String net.rrm.ehour.reminder.ReminderService.net$rrm$ehour$reminder$ReminderService$$determineMailEvent$1(int)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+10-06@17:57:21 INFO  org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [public final boolean net.rrm.ehour.reminder.ReminderService.net$rrm$ehour$reminder$ReminderService$$hasMailBeenSent$1(java.lang.String,java.lang.String)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+10-06@17:57:21 INFO  net.rrm.ehour.reminder.IScheduleReminders - Per configuration, reminder mails are disabled.
+10-06@17:57:21 INFO  net.rrm.ehour.init.AdminAccountValidator - eHour already initialized
+10-06@17:57:21 INFO  net.rrm.ehour.init.EmptyPmRoleDeletor - Cleaning up users with ProjectManagement roles but without project...
+10-06@17:57:21 INFO  org.springframework.orm.hibernate4.HibernateTransactionManager - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource[ identityToken -> 1bqx2bn9q1vdlr415fss8l|771992d9, dataSourceName -> 1bqx2bn9q1vdlr415fss8l|771992d9 ]] of Hibernate SessionFactory for HibernateTransactionManager
+10-06@17:57:22 INFO  net.rrm.ehour.init.MissingPmRoleValidator - Finding and fixing users who are PM but don't have PM role (EHO-381)
+10-06@17:57:22 INFO  net.rrm.ehour.user.service.UserDepartmentMigrator - Migrating user departments in user to a more flexible structure...
+10-06@17:57:22 INFO  net.rrm.ehour.user.service.UserDepartmentMigrator - 0 users found with legacy user department, all converted.
+10-06@17:57:22 INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/eh/**'], [org.springframework.security.web.context.SecurityContextPersistenceFilter@7bedf006]
+10-06@17:57:22 INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7219 ms
+10-06@17:57:22 INFO  net.rrm.ehour.update.LatestVersionFetcherHttpImpl - Fetching latest version number of eHour release from http://ehour.nl/latest_version.txt
+10-06@17:57:22 INFO  org.apache.wicket.Application - [EhourWebApplication] init: Wicket core library initializer
+10-06@17:57:22 INFO  org.apache.wicket.RequestListenerInterface - registered listener interface [RequestListenerInterface name=IBehaviorListener, method=public abstract void org.apache.wicket.behavior.IBehaviorListener.onRequest()]
+10-06@17:57:22 INFO  org.apache.wicket.RequestListenerInterface - registered listener interface [RequestListenerInterface name=IFormSubmitListener, method=public abstract void org.apache.wicket.markup.html.form.IFormSubmitListener.onFormSubmitted()]
+10-06@17:57:22 INFO  org.apache.wicket.RequestListenerInterface - registered listener interface [RequestListenerInterface name=ILinkListener, method=public abstract void org.apache.wicket.markup.html.link.ILinkListener.onLinkClicked()]
+10-06@17:57:22 INFO  org.apache.wicket.RequestListenerInterface - registered listener interface [RequestListenerInterface name=IOnChangeListener, method=public abstract void org.apache.wicket.markup.html.form.IOnChangeListener.onSelectionChanged()]
+10-06@17:57:22 INFO  org.apache.wicket.RequestListenerInterface - registered listener interface [RequestListenerInterface name=IRedirectListener, method=public abstract void org.apache.wicket.IRedirectListener.onRedirect()]
+10-06@17:57:22 INFO  org.apache.wicket.RequestListenerInterface - registered listener interface [RequestListenerInterface name=IResourceListener, method=public abstract void org.apache.wicket.IResourceListener.onResourceRequested()]
+10-06@17:57:22 INFO  org.apache.wicket.Application - [EhourWebApplication] init: DevUtils DebugBar Initializer
+10-06@17:57:22 INFO  org.apache.wicket.Application - [EhourWebApplication] init: Wicket extensions initializer
+10-06@17:57:22 INFO  net.rrm.ehour.ui.EhourWebApplication - *** eHour version 1.4.3 started!
+10-06@17:57:22 INFO  org.apache.wicket.protocol.http.WebApplication - [EhourWebApplication] Started Wicket version 6.19.0 in DEPLOYMENT mode
+10-06@17:57:42 INFO  org.apache.wicket.Application - [EhourWebApplication] destroy: Wicket core library initializer
+10-06@17:57:42 INFO  org.apache.wicket.Application - [EhourWebApplication] destroy: DevUtils DebugBar Initializer
+10-06@17:57:42 INFO  org.apache.wicket.Application - [EhourWebApplication] destroy: Wicket extensions initializer
+10-06@17:57:42 INFO  org.springframework.web.context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Fri Oct 06 17:57:15 UTC 2017]; root of context hierarchy
+10-06@17:57:42 INFO  org.springframework.cache.ehcache.EhCacheManagerFactoryBean - Shutting down EhCache CacheManager
+10-06@17:57:42 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+10-06@18:04:59 INFO  net.rrm.ehour.ui.listener.EnvInitListener - EHOUR_HOME set to /opt/ehour
+10-06@18:04:59 INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+10-06@18:04:59 INFO  org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Oct 06 18:04:59 UTC 2017]; root of context hierarchy
+10-06@18:04:59 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-propertyconfig.xml]
+10-06@18:05:00 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-dbconnectivity.xml]
+10-06@18:05:00 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-service-ehourconfig.xml]
+10-06@18:05:00 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-service-scanner.xml]
+10-06@18:05:00 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-service.xml]
+10-06@18:05:00 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-security.xml]
+10-06@18:05:00 INFO  org.springframework.security.core.SpringSecurityCoreVersion - You are running with Spring Security Core 3.2.4.RELEASE
+10-06@18:05:00 INFO  org.springframework.security.config.SecurityNamespaceHandler - Spring Security 'config' module version is 3.2.4.RELEASE
+10-06@18:05:00 WARN  org.springframework.security.config.http.MatcherType - 'path-type' is deprecated. Please use 'request-matcher' instead.
+10-06@18:05:00 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'passwordEncoder': replacing [Generic bean: class [org.springframework.security.authentication.encoding.ShaPasswordEncoder]; scope=; abstract=false; lazyInit=true; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [context-service.xml]] with [Generic bean: class [org.springframework.security.authentication.encoding.ShaPasswordEncoder]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [context-security.xml]]
+10-06@18:05:00 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-cache.xml]
+10-06@18:05:00 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-wicket.xml]
+10-06@18:05:00 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-versioncheck.xml]
+10-06@18:05:00 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-service-scanner-nisum.xml]
+10-06@18:05:01 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-dbconnectivity-nisum.xml]
+10-06@18:05:01 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'org.springframework.transaction.config.internalTransactionAdvisor': replacing [Root bean: class [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; factoryMethodName=transactionAdvisor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]]
+10-06@18:05:01 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'taskScheduler': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=reminderConfig; factoryMethodName=taskScheduler; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [net/rrm/ehour/reminder/ReminderConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=timesheetLockConfig; factoryMethodName=taskScheduler; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [net/rrm/ehour/timesheet/service/TimesheetLockConfig.class]]
+10-06@18:05:01 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'configureScheduler': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=reminderConfig; factoryMethodName=configureScheduler; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [net/rrm/ehour/reminder/ReminderConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=timesheetLockConfig; factoryMethodName=configureScheduler; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [net/rrm/ehour/timesheet/service/TimesheetLockConfig.class]]
+10-06@18:05:01 INFO  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from file [/opt/ehour/conf/ehour.properties]
+10-06@18:05:01 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10-06@18:05:01 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'datasourceConfiguration' of type [class net.rrm.ehour.persistence.datasource.DatasourceConfiguration$$EnhancerBySpringCGLIB$$4605b15d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10-06@18:05:01 INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+10-06@18:05:01 INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+10-06@18:05:02 INFO  net.rrm.ehour.persistence.datasource.SupportedDatabases - Using driver class: com.mysql.jdbc.Driver
+10-06@18:05:02 INFO  net.rrm.ehour.persistence.datasource.SupportedDatabases - DatasourceConfiguration{databaseType='mysql', driver='com.mysql.jdbc.Driver', url='jdbc:mysql://mysql:3306/ehour?zeroDateTimeBehavior=convertToNull&amp', username='*****', password='*****', checkoutTimeout=10000, connectionPool=c3p0}
+10-06@18:05:02 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'createDatasource' of type [class com.mchange.v2.c3p0.ComboPooledDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10-06@18:05:02 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'hibernateConfiguration' of type [class net.rrm.ehour.persistence.appconfig.HibernateConfiguration$$EnhancerBySpringCGLIB$$acfb9024] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10-06@18:05:02 INFO  net.rrm.ehour.persistence.appconfig.HibernateConfiguration - Using database type: mysql
+10-06@18:05:02 INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+10-06@18:05:02 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.7.Final}
+10-06@18:05:02 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+10-06@18:05:02 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+10-06@18:05:03 INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 10000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqx2bn9q1vdvpmh1um60ul|f49108, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqx2bn9q1vdvpmh1um60ul|f49108, idleConnectionTestPeriod -> 30, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://mysql:3306/ehour?zeroDateTimeBehavior=convertToNull&amp, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 10, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+10-06@18:05:05 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+10-06@18:05:05 INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+10-06@18:05:05 INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+10-06@18:05:05 INFO  org.hibernate.cache.spi.UpdateTimestampsCache - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+10-06@18:05:05 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+10-06@18:05:05 INFO  org.hibernate.cache.internal.StandardQueryCache - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+10-06@18:05:05 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+10-06@18:05:05 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 4.3.2.Final
+10-06@18:05:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.TimesheetEntry]; using defaults.
+10-06@18:05:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.BinaryConfiguration]; using defaults.
+10-06@18:05:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.ProjectAssignment]; using defaults.
+10-06@18:05:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.EmployeeType]; using defaults.
+10-06@18:05:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.UserDepartment]; using defaults.
+10-06@18:05:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Country]; using defaults.
+10-06@18:05:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.TimesheetLock]; using defaults.
+10-06@18:05:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.User]; using defaults.
+10-06@18:05:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Audit]; using defaults.
+10-06@18:05:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Location]; using defaults.
+10-06@18:05:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Configuration]; using defaults.
+10-06@18:05:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.TimesheetComment]; using defaults.
+10-06@18:05:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Customer]; using defaults.
+10-06@18:05:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Region]; using defaults.
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.SchemaValidator - HHH000229: Running schema validator
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.SchemaValidator - HHH000102: Fetching database metadata
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.AUDIT
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [audit_id, user_id, success, audit_date, action, audit_action_type, user_fullname, page, parameters]
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.CONFIGURATION
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [config_value, config_key]
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.CONFIGURATION_BIN
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [config_value, metadata, config_key]
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.COUNTRY
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [country_name, country_id]
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.CUSTOMER
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [code, name, description, active, customer_id]
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.EMPLOYEE_TYPE
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [employee_type_name, employee_type_id]
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.LOCATION
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [location_name, region_id, location_id]
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.MAIL_LOG
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [mail_event, mail_log_id, mail_to, success, timestamp]
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.PROJECT
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [project_id, default_project, contact, name, description, active, project_code, project_manager, customer_id, billable]
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.PROJECT_ASSIGNMENT
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [assignment_id, date_start, role, project_id, user_id, hourly_rate, assignment_type_id, active, allotted_hours, notify_pm_on_overrun, date_end, allotted_hours_overrun]
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.PROJECT_ASSIGNMENT_TYPE
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [assignment_type_id, assignment_type]
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.REGION
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [region_id, region_name, country_id]
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.TIMESHEET_COMMENT
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [user_id, comment_date, comment]
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.TIMESHEET_ENTRY
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [assignment_id, hours, employee_type, timesheet_status, comment, update_date, location_id, entry_date]
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.TIMESHEET_LOCK
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [date_start, name, date_end, lock_id]
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.TIMESHEET_LOCK_EXCLUSION
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [user_id, lock_id]
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.USERS
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [approver, salt, department_id, last_name, active, password, employee_type, user_id, first_name, worklocation, email, country_id, username]
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.USER_DEPARTMENT
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [code, department_id, timezone, name, manager_user_id, parent_department_id]
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.USER_ROLE
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [role, name]
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.USER_TO_DEPARTMENT
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [department_id, user_id]
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.USER_TO_USERROLE
+10-06@18:05:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [role, user_id]
+10-06@18:06:38 INFO  net.rrm.ehour.ui.listener.EnvInitListener - EHOUR_HOME set to /opt/ehour
+10-06@18:06:38 INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+10-06@18:06:38 INFO  org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Oct 06 18:06:38 UTC 2017]; root of context hierarchy
+10-06@18:06:38 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-propertyconfig.xml]
+10-06@18:06:39 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-dbconnectivity.xml]
+10-06@18:06:39 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-service-ehourconfig.xml]
+10-06@18:06:39 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-service-scanner.xml]
+10-06@18:06:39 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-service.xml]
+10-06@18:06:39 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-security.xml]
+10-06@18:06:39 INFO  org.springframework.security.core.SpringSecurityCoreVersion - You are running with Spring Security Core 3.2.4.RELEASE
+10-06@18:06:39 INFO  org.springframework.security.config.SecurityNamespaceHandler - Spring Security 'config' module version is 3.2.4.RELEASE
+10-06@18:06:40 WARN  org.springframework.security.config.http.MatcherType - 'path-type' is deprecated. Please use 'request-matcher' instead.
+10-06@18:06:40 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'passwordEncoder': replacing [Generic bean: class [org.springframework.security.authentication.encoding.ShaPasswordEncoder]; scope=; abstract=false; lazyInit=true; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [context-service.xml]] with [Generic bean: class [org.springframework.security.authentication.encoding.ShaPasswordEncoder]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [context-security.xml]]
+10-06@18:06:40 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-cache.xml]
+10-06@18:06:40 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-wicket.xml]
+10-06@18:06:40 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-versioncheck.xml]
+10-06@18:06:40 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-service-scanner-nisum.xml]
+10-06@18:06:40 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-dbconnectivity-nisum.xml]
+10-06@18:06:40 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'org.springframework.transaction.config.internalTransactionAdvisor': replacing [Root bean: class [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; factoryMethodName=transactionAdvisor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]]
+10-06@18:06:40 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'taskScheduler': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=reminderConfig; factoryMethodName=taskScheduler; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [net/rrm/ehour/reminder/ReminderConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=timesheetLockConfig; factoryMethodName=taskScheduler; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [net/rrm/ehour/timesheet/service/TimesheetLockConfig.class]]
+10-06@18:06:40 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'configureScheduler': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=reminderConfig; factoryMethodName=configureScheduler; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [net/rrm/ehour/reminder/ReminderConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=timesheetLockConfig; factoryMethodName=configureScheduler; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [net/rrm/ehour/timesheet/service/TimesheetLockConfig.class]]
+10-06@18:06:40 INFO  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from file [/opt/ehour/conf/ehour.properties]
+10-06@18:06:40 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10-06@18:06:41 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'datasourceConfiguration' of type [class net.rrm.ehour.persistence.datasource.DatasourceConfiguration$$EnhancerBySpringCGLIB$$4605b15d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10-06@18:06:41 INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+10-06@18:06:41 INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+10-06@18:06:41 INFO  net.rrm.ehour.persistence.datasource.SupportedDatabases - Using driver class: com.mysql.jdbc.Driver
+10-06@18:06:41 INFO  net.rrm.ehour.persistence.datasource.SupportedDatabases - DatasourceConfiguration{databaseType='mysql', driver='com.mysql.jdbc.Driver', url='jdbc:mysql://mysql:3306/ehour?zeroDateTimeBehavior=convertToNull&amp', username='*****', password='*****', checkoutTimeout=10000, connectionPool=c3p0}
+10-06@18:06:41 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'createDatasource' of type [class com.mchange.v2.c3p0.ComboPooledDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10-06@18:06:41 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'hibernateConfiguration' of type [class net.rrm.ehour.persistence.appconfig.HibernateConfiguration$$EnhancerBySpringCGLIB$$acfb9024] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10-06@18:06:41 INFO  net.rrm.ehour.persistence.appconfig.HibernateConfiguration - Using database type: mysql
+10-06@18:06:42 INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+10-06@18:06:42 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.7.Final}
+10-06@18:06:42 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+10-06@18:06:42 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+10-06@18:06:42 INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 10000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqx2bo9q1vdxu9bukqjeg|43a1c187, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqx2bo9q1vdxu9bukqjeg|43a1c187, idleConnectionTestPeriod -> 30, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://mysql:3306/ehour?zeroDateTimeBehavior=convertToNull&amp, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 10, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+10-06@18:06:44 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+10-06@18:06:45 INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+10-06@18:06:45 INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+10-06@18:06:45 INFO  org.hibernate.cache.spi.UpdateTimestampsCache - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+10-06@18:06:45 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+10-06@18:06:45 INFO  org.hibernate.cache.internal.StandardQueryCache - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+10-06@18:06:45 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+10-06@18:06:45 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 4.3.2.Final
+10-06@18:06:45 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.TimesheetEntry]; using defaults.
+10-06@18:06:45 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.BinaryConfiguration]; using defaults.
+10-06@18:06:45 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.ProjectAssignment]; using defaults.
+10-06@18:06:45 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.EmployeeType]; using defaults.
+10-06@18:06:45 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.UserDepartment]; using defaults.
+10-06@18:06:45 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Country]; using defaults.
+10-06@18:06:45 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.TimesheetLock]; using defaults.
+10-06@18:06:45 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.User]; using defaults.
+10-06@18:06:45 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Audit]; using defaults.
+10-06@18:06:45 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Location]; using defaults.
+10-06@18:06:45 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Configuration]; using defaults.
+10-06@18:06:45 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.TimesheetComment]; using defaults.
+10-06@18:06:45 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Customer]; using defaults.
+10-06@18:06:45 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Region]; using defaults.
+10-06@18:06:45 INFO  org.hibernate.tool.hbm2ddl.SchemaValidator - HHH000229: Running schema validator
+10-06@18:06:45 INFO  org.hibernate.tool.hbm2ddl.SchemaValidator - HHH000102: Fetching database metadata
+10-06@18:06:45 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.AUDIT
+10-06@18:06:45 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [audit_id, user_id, success, audit_date, action, audit_action_type, user_fullname, page, parameters]
+10-06@18:06:45 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.CONFIGURATION
+10-06@18:06:45 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [config_value, config_key]
+10-06@18:06:45 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.CONFIGURATION_BIN
+10-06@18:06:45 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [config_value, metadata, config_key]
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.COUNTRY
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [country_name, country_id]
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.CUSTOMER
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [code, name, description, active, customer_id]
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.EMPLOYEE_TYPE
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [employee_type_name, employee_type_id]
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.LOCATION
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [location_name, region_id, location_id]
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.MAIL_LOG
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [mail_event, mail_log_id, mail_to, success, timestamp]
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.PROJECT
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [project_id, default_project, contact, name, description, active, project_code, project_manager, customer_id, billable]
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.PROJECT_ASSIGNMENT
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [assignment_id, date_start, role, project_id, user_id, hourly_rate, assignment_type_id, active, allotted_hours, notify_pm_on_overrun, date_end, allotted_hours_overrun]
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.PROJECT_ASSIGNMENT_TYPE
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [assignment_type_id, assignment_type]
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.REGION
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [region_id, region_name, country_id]
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.TIMESHEET_COMMENT
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [user_id, comment_date, comment]
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.TIMESHEET_ENTRY
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [assignment_id, hours, employee_type, timesheet_status, comment, update_date, location_id, entry_date]
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.TIMESHEET_LOCK
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [date_start, name, date_end, lock_id]
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.TIMESHEET_LOCK_EXCLUSION
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [user_id, lock_id]
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.USERS
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [approver, salt, department_id, last_name, active, password, employee_type, user_id, first_name, worklocation, email, country_id, username]
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.USER_DEPARTMENT
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [code, department_id, timezone, name, manager_user_id, parent_department_id]
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.USER_ROLE
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [role, name]
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.USER_TO_DEPARTMENT
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [department_id, user_id]
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.USER_TO_USERROLE
+10-06@18:06:46 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [role, user_id]
+10-06@18:06:47 INFO  net.rrm.ehour.config.EhourConfigJdbc - Configuration loaded from database: net.rrm.ehour.config.EhourConfigJdbc@74236e2d[
+  completeDayHours=8.0
+  isShowTurnover=true
+  currencySymbol=$
+  currencyCode=USD
+]
+10-06@18:06:47 INFO  net.rrm.ehour.config.TranslationDiscovery - Looking for translations in /opt/ehour/resources/i18n
+10-06@18:06:47 INFO  net.rrm.ehour.config.TranslationDiscovery - Found translation file for English (EhourWebApplication.properties)
+10-06@18:06:47 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService  'taskScheduler'
+10-06@18:06:47 INFO  net.rrm.ehour.timesheet.service.IScheduleTimesheetLock - Per configuration, Timesheet lock is disabled.
+10-06@18:06:47 INFO  org.springframework.ui.freemarker.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [Root WebApplicationContext: startup date [Fri Oct 06 18:06:38 UTC 2017]; root of context hierarchy] and template loader path [classpath:/emailTemplates/]
+10-06@18:06:47 INFO  org.springframework.cache.ehcache.EhCacheManagerFactoryBean - Initializing EhCache CacheManager
+10-06@18:06:47 INFO  org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [public final scala.collection.immutable.List net.rrm.ehour.reminder.IFindUsersWithoutSufficientHours.net$rrm$ehour$reminder$IFindUsersWithoutSufficientHours$$toWeekDays$1(scala.Tuple2)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+10-06@18:06:47 INFO  org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [public final boolean net.rrm.ehour.reminder.IFindUsersWithoutSufficientHours.net$rrm$ehour$reminder$IFindUsersWithoutSufficientHours$$coversReminderDays$1(scala.collection.immutable.List,org.joda.time.LocalDate,org.joda.time.LocalDate,scala.collection.immutable.List)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+10-06@18:06:47 INFO  org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [public final org.apache.log4j.Logger net.rrm.ehour.reminder.ReminderService.net$rrm$ehour$reminder$ReminderService$$LOGGER()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+10-06@18:06:47 INFO  org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [private final org.joda.time.format.DateTimeFormatter net.rrm.ehour.reminder.ReminderService.Formatter()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+10-06@18:06:47 INFO  org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [public final java.lang.String net.rrm.ehour.reminder.ReminderService.net$rrm$ehour$reminder$ReminderService$$determineMailEvent$1(int)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+10-06@18:06:47 INFO  org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [public final boolean net.rrm.ehour.reminder.ReminderService.net$rrm$ehour$reminder$ReminderService$$hasMailBeenSent$1(java.lang.String,java.lang.String)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+10-06@18:06:47 INFO  net.rrm.ehour.reminder.IScheduleReminders - Per configuration, reminder mails are disabled.
+10-06@18:06:47 INFO  net.rrm.ehour.init.AdminAccountValidator - eHour already initialized
+10-06@18:06:47 INFO  net.rrm.ehour.init.EmptyPmRoleDeletor - Cleaning up users with ProjectManagement roles but without project...
+10-06@18:06:47 INFO  org.springframework.orm.hibernate4.HibernateTransactionManager - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource[ identityToken -> 1bqx2bo9q1vdxu9bukqjeg|43a1c187, dataSourceName -> 1bqx2bo9q1vdxu9bukqjeg|43a1c187 ]] of Hibernate SessionFactory for HibernateTransactionManager
+10-06@18:06:48 INFO  net.rrm.ehour.init.MissingPmRoleValidator - Finding and fixing users who are PM but don't have PM role (EHO-381)
+10-06@18:06:48 INFO  net.rrm.ehour.user.service.UserDepartmentMigrator - Migrating user departments in user to a more flexible structure...
+10-06@18:06:48 INFO  net.rrm.ehour.user.service.UserDepartmentMigrator - 0 users found with legacy user department, all converted.
+10-06@18:06:48 INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/eh/**'], [org.springframework.security.web.context.SecurityContextPersistenceFilter@28c69785]
+10-06@18:06:48 INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 9938 ms
+10-06@18:06:48 INFO  net.rrm.ehour.update.LatestVersionFetcherHttpImpl - Fetching latest version number of eHour release from http://ehour.nl/latest_version.txt
+10-06@18:06:48 INFO  org.apache.wicket.Application - [EhourWebApplication] init: Wicket core library initializer
+10-06@18:06:48 INFO  org.apache.wicket.RequestListenerInterface - registered listener interface [RequestListenerInterface name=IBehaviorListener, method=public abstract void org.apache.wicket.behavior.IBehaviorListener.onRequest()]
+10-06@18:06:48 INFO  org.apache.wicket.RequestListenerInterface - registered listener interface [RequestListenerInterface name=IFormSubmitListener, method=public abstract void org.apache.wicket.markup.html.form.IFormSubmitListener.onFormSubmitted()]
+10-06@18:06:48 INFO  org.apache.wicket.RequestListenerInterface - registered listener interface [RequestListenerInterface name=ILinkListener, method=public abstract void org.apache.wicket.markup.html.link.ILinkListener.onLinkClicked()]
+10-06@18:06:48 INFO  org.apache.wicket.RequestListenerInterface - registered listener interface [RequestListenerInterface name=IOnChangeListener, method=public abstract void org.apache.wicket.markup.html.form.IOnChangeListener.onSelectionChanged()]
+10-06@18:06:48 INFO  org.apache.wicket.RequestListenerInterface - registered listener interface [RequestListenerInterface name=IRedirectListener, method=public abstract void org.apache.wicket.IRedirectListener.onRedirect()]
+10-06@18:06:48 INFO  org.apache.wicket.RequestListenerInterface - registered listener interface [RequestListenerInterface name=IResourceListener, method=public abstract void org.apache.wicket.IResourceListener.onResourceRequested()]
+10-06@18:06:48 INFO  org.apache.wicket.Application - [EhourWebApplication] init: DevUtils DebugBar Initializer
+10-06@18:06:48 INFO  org.apache.wicket.Application - [EhourWebApplication] init: Wicket extensions initializer
+10-06@18:06:49 INFO  net.rrm.ehour.ui.EhourWebApplication - *** eHour version 1.4.3 started!
+10-06@18:06:49 INFO  org.apache.wicket.protocol.http.WebApplication - [EhourWebApplication] Started Wicket version 6.19.0 in DEPLOYMENT mode
+10-06@18:08:13 INFO  org.apache.wicket.Application - [EhourWebApplication] destroy: Wicket core library initializer
+10-06@18:08:13 INFO  org.apache.wicket.Application - [EhourWebApplication] destroy: DevUtils DebugBar Initializer
+10-06@18:08:13 INFO  org.apache.wicket.Application - [EhourWebApplication] destroy: Wicket extensions initializer
+10-06@18:08:13 INFO  org.springframework.web.context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Fri Oct 06 18:06:38 UTC 2017]; root of context hierarchy
+10-06@18:08:13 INFO  org.springframework.cache.ehcache.EhCacheManagerFactoryBean - Shutting down EhCache CacheManager
+10-06@18:08:13 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+10-06@18:10:27 INFO  net.rrm.ehour.ui.listener.EnvInitListener - EHOUR_HOME set to /opt/ehour
+10-06@18:10:27 INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+10-06@18:10:28 INFO  org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Oct 06 18:10:28 UTC 2017]; root of context hierarchy
+10-06@18:10:28 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-propertyconfig.xml]
+10-06@18:10:28 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-dbconnectivity.xml]
+10-06@18:10:28 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-service-ehourconfig.xml]
+10-06@18:10:28 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-service-scanner.xml]
+10-06@18:10:29 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-service.xml]
+10-06@18:10:29 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-security.xml]
+10-06@18:10:29 INFO  org.springframework.security.core.SpringSecurityCoreVersion - You are running with Spring Security Core 3.2.4.RELEASE
+10-06@18:10:29 INFO  org.springframework.security.config.SecurityNamespaceHandler - Spring Security 'config' module version is 3.2.4.RELEASE
+10-06@18:10:29 WARN  org.springframework.security.config.http.MatcherType - 'path-type' is deprecated. Please use 'request-matcher' instead.
+10-06@18:10:29 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'passwordEncoder': replacing [Generic bean: class [org.springframework.security.authentication.encoding.ShaPasswordEncoder]; scope=; abstract=false; lazyInit=true; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [context-service.xml]] with [Generic bean: class [org.springframework.security.authentication.encoding.ShaPasswordEncoder]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [context-security.xml]]
+10-06@18:10:29 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-cache.xml]
+10-06@18:10:29 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-wicket.xml]
+10-06@18:10:29 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-versioncheck.xml]
+10-06@18:10:29 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-service-scanner-nisum.xml]
+10-06@18:10:29 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-dbconnectivity-nisum.xml]
+10-06@18:10:29 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'org.springframework.transaction.config.internalTransactionAdvisor': replacing [Root bean: class [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; factoryMethodName=transactionAdvisor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]]
+10-06@18:10:29 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'taskScheduler': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=reminderConfig; factoryMethodName=taskScheduler; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [net/rrm/ehour/reminder/ReminderConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=timesheetLockConfig; factoryMethodName=taskScheduler; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [net/rrm/ehour/timesheet/service/TimesheetLockConfig.class]]
+10-06@18:10:29 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'configureScheduler': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=reminderConfig; factoryMethodName=configureScheduler; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [net/rrm/ehour/reminder/ReminderConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=timesheetLockConfig; factoryMethodName=configureScheduler; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [net/rrm/ehour/timesheet/service/TimesheetLockConfig.class]]
+10-06@18:10:30 INFO  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from file [/opt/ehour/conf/ehour.properties]
+10-06@18:10:30 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10-06@18:10:30 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'datasourceConfiguration' of type [class net.rrm.ehour.persistence.datasource.DatasourceConfiguration$$EnhancerBySpringCGLIB$$5535ccc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10-06@18:10:30 INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+10-06@18:10:30 INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+10-06@18:10:30 INFO  net.rrm.ehour.persistence.datasource.SupportedDatabases - Using driver class: com.mysql.jdbc.Driver
+10-06@18:10:30 INFO  net.rrm.ehour.persistence.datasource.SupportedDatabases - DatasourceConfiguration{databaseType='mysql', driver='com.mysql.jdbc.Driver', url='jdbc:mysql://mysql:3306/ehour?zeroDateTimeBehavior=convertToNull&amp', username='*****', password='*****', checkoutTimeout=10000, connectionPool=c3p0}
+10-06@18:10:30 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'createDatasource' of type [class com.mchange.v2.c3p0.ComboPooledDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10-06@18:10:30 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'hibernateConfiguration' of type [class net.rrm.ehour.persistence.appconfig.HibernateConfiguration$$EnhancerBySpringCGLIB$$6c493b93] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10-06@18:10:30 INFO  net.rrm.ehour.persistence.appconfig.HibernateConfiguration - Using database type: mysql
+10-06@18:10:31 INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+10-06@18:10:31 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.7.Final}
+10-06@18:10:31 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+10-06@18:10:31 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+10-06@18:10:31 INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 10000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqx2bo9q1ve2r142wqr7i|6b2a0e25, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqx2bo9q1ve2r142wqr7i|6b2a0e25, idleConnectionTestPeriod -> 30, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://mysql:3306/ehour?zeroDateTimeBehavior=convertToNull&amp, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 10, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+10-06@18:10:32 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+10-06@18:10:33 INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+10-06@18:10:33 INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+10-06@18:10:33 INFO  org.hibernate.cache.spi.UpdateTimestampsCache - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+10-06@18:10:33 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+10-06@18:10:33 INFO  org.hibernate.cache.internal.StandardQueryCache - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+10-06@18:10:33 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+10-06@18:10:33 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 4.3.2.Final
+10-06@18:10:33 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.TimesheetEntry]; using defaults.
+10-06@18:10:33 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.BinaryConfiguration]; using defaults.
+10-06@18:10:33 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.ProjectAssignment]; using defaults.
+10-06@18:10:33 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.EmployeeType]; using defaults.
+10-06@18:10:33 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.UserDepartment]; using defaults.
+10-06@18:10:33 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Country]; using defaults.
+10-06@18:10:33 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.TimesheetLock]; using defaults.
+10-06@18:10:33 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.User]; using defaults.
+10-06@18:10:33 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Audit]; using defaults.
+10-06@18:10:33 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Location]; using defaults.
+10-06@18:10:33 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Configuration]; using defaults.
+10-06@18:10:33 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.TimesheetComment]; using defaults.
+10-06@18:10:33 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Customer]; using defaults.
+10-06@18:10:33 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Region]; using defaults.
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.SchemaValidator - HHH000229: Running schema validator
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.SchemaValidator - HHH000102: Fetching database metadata
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.AUDIT
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [audit_id, user_id, success, audit_date, action, audit_action_type, user_fullname, page, parameters]
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.CONFIGURATION
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [config_value, config_key]
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.CONFIGURATION_BIN
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [config_value, metadata, config_key]
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.COUNTRY
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [country_name, country_id]
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.CUSTOMER
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [code, name, description, active, customer_id]
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.EMPLOYEE_TYPE
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [employee_type_name, employee_type_id]
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.LOCATION
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [location_name, region_id, location_id]
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.MAIL_LOG
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [mail_event, mail_log_id, mail_to, success, timestamp]
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.PROJECT
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [project_id, default_project, contact, name, description, active, project_code, project_manager, customer_id, billable]
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.PROJECT_ASSIGNMENT
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [assignment_id, date_start, role, project_id, user_id, hourly_rate, assignment_type_id, active, allotted_hours, notify_pm_on_overrun, date_end, allotted_hours_overrun]
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.PROJECT_ASSIGNMENT_TYPE
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [assignment_type_id, assignment_type]
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.REGION
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [region_id, region_name, country_id]
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.TIMESHEET_COMMENT
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [user_id, comment_date, comment]
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.TIMESHEET_ENTRY
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [assignment_id, hours, employee_type, timesheet_status, comment, update_date, location_id, entry_date]
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.TIMESHEET_LOCK
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [date_start, name, date_end, lock_id]
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.TIMESHEET_LOCK_EXCLUSION
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [user_id, lock_id]
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.USERS
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [approver, salt, department_id, last_name, active, password, employee_type, user_id, first_name, worklocation, email, country_id, username]
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.USER_DEPARTMENT
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [code, department_id, timezone, name, manager_user_id, parent_department_id]
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.USER_ROLE
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [role, name]
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.USER_TO_DEPARTMENT
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [department_id, user_id]
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.USER_TO_USERROLE
+10-06@18:10:33 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [role, user_id]
+10-06@18:10:34 INFO  net.rrm.ehour.config.EhourConfigJdbc - Configuration loaded from database: net.rrm.ehour.config.EhourConfigJdbc@2190c4d0[
+  completeDayHours=8.0
+  isShowTurnover=true
+  currencySymbol=$
+  currencyCode=USD
+]
+10-06@18:10:35 INFO  net.rrm.ehour.config.TranslationDiscovery - Looking for translations in /opt/ehour/resources/i18n
+10-06@18:10:35 INFO  net.rrm.ehour.config.TranslationDiscovery - Found translation file for English (EhourWebApplication.properties)
+10-06@18:10:35 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService  'taskScheduler'
+10-06@18:10:35 INFO  net.rrm.ehour.timesheet.service.IScheduleTimesheetLock - Per configuration, Timesheet lock is disabled.
+10-06@18:10:35 INFO  org.springframework.ui.freemarker.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [Root WebApplicationContext: startup date [Fri Oct 06 18:10:28 UTC 2017]; root of context hierarchy] and template loader path [classpath:/emailTemplates/]
+10-06@18:10:35 INFO  org.springframework.cache.ehcache.EhCacheManagerFactoryBean - Initializing EhCache CacheManager
+10-06@18:10:35 INFO  org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [public final scala.collection.immutable.List net.rrm.ehour.reminder.IFindUsersWithoutSufficientHours.net$rrm$ehour$reminder$IFindUsersWithoutSufficientHours$$toWeekDays$1(scala.Tuple2)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+10-06@18:10:35 INFO  org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [public final boolean net.rrm.ehour.reminder.IFindUsersWithoutSufficientHours.net$rrm$ehour$reminder$IFindUsersWithoutSufficientHours$$coversReminderDays$1(scala.collection.immutable.List,org.joda.time.LocalDate,org.joda.time.LocalDate,scala.collection.immutable.List)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+10-06@18:10:35 INFO  org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [public final org.apache.log4j.Logger net.rrm.ehour.reminder.ReminderService.net$rrm$ehour$reminder$ReminderService$$LOGGER()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+10-06@18:10:35 INFO  org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [private final org.joda.time.format.DateTimeFormatter net.rrm.ehour.reminder.ReminderService.Formatter()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+10-06@18:10:35 INFO  org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [public final java.lang.String net.rrm.ehour.reminder.ReminderService.net$rrm$ehour$reminder$ReminderService$$determineMailEvent$1(int)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+10-06@18:10:35 INFO  org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [public final boolean net.rrm.ehour.reminder.ReminderService.net$rrm$ehour$reminder$ReminderService$$hasMailBeenSent$1(java.lang.String,java.lang.String)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+10-06@18:10:35 INFO  net.rrm.ehour.reminder.IScheduleReminders - Per configuration, reminder mails are disabled.
+10-06@18:10:35 INFO  net.rrm.ehour.init.AdminAccountValidator - eHour already initialized
+10-06@18:10:35 INFO  net.rrm.ehour.init.EmptyPmRoleDeletor - Cleaning up users with ProjectManagement roles but without project...
+10-06@18:10:35 INFO  org.springframework.orm.hibernate4.HibernateTransactionManager - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource[ identityToken -> 1bqx2bo9q1ve2r142wqr7i|6b2a0e25, dataSourceName -> 1bqx2bo9q1ve2r142wqr7i|6b2a0e25 ]] of Hibernate SessionFactory for HibernateTransactionManager
+10-06@18:10:36 INFO  net.rrm.ehour.init.MissingPmRoleValidator - Finding and fixing users who are PM but don't have PM role (EHO-381)
+10-06@18:10:36 INFO  net.rrm.ehour.user.service.UserDepartmentMigrator - Migrating user departments in user to a more flexible structure...
+10-06@18:10:36 INFO  net.rrm.ehour.user.service.UserDepartmentMigrator - 0 users found with legacy user department, all converted.
+10-06@18:10:36 INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/eh/**'], [org.springframework.security.web.context.SecurityContextPersistenceFilter@5c0822fb]
+10-06@18:10:36 INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8578 ms
+10-06@18:10:36 INFO  net.rrm.ehour.update.LatestVersionFetcherHttpImpl - Fetching latest version number of eHour release from http://ehour.nl/latest_version.txt
+10-06@18:10:36 INFO  org.apache.wicket.Application - [EhourWebApplication] init: Wicket core library initializer
+10-06@18:10:36 INFO  org.apache.wicket.RequestListenerInterface - registered listener interface [RequestListenerInterface name=IBehaviorListener, method=public abstract void org.apache.wicket.behavior.IBehaviorListener.onRequest()]
+10-06@18:10:36 INFO  org.apache.wicket.RequestListenerInterface - registered listener interface [RequestListenerInterface name=IFormSubmitListener, method=public abstract void org.apache.wicket.markup.html.form.IFormSubmitListener.onFormSubmitted()]
+10-06@18:10:36 INFO  org.apache.wicket.RequestListenerInterface - registered listener interface [RequestListenerInterface name=ILinkListener, method=public abstract void org.apache.wicket.markup.html.link.ILinkListener.onLinkClicked()]
+10-06@18:10:36 INFO  org.apache.wicket.RequestListenerInterface - registered listener interface [RequestListenerInterface name=IOnChangeListener, method=public abstract void org.apache.wicket.markup.html.form.IOnChangeListener.onSelectionChanged()]
+10-06@18:10:36 INFO  org.apache.wicket.RequestListenerInterface - registered listener interface [RequestListenerInterface name=IRedirectListener, method=public abstract void org.apache.wicket.IRedirectListener.onRedirect()]
+10-06@18:10:36 INFO  org.apache.wicket.RequestListenerInterface - registered listener interface [RequestListenerInterface name=IResourceListener, method=public abstract void org.apache.wicket.IResourceListener.onResourceRequested()]
+10-06@18:10:36 INFO  org.apache.wicket.Application - [EhourWebApplication] init: DevUtils DebugBar Initializer
+10-06@18:10:36 INFO  org.apache.wicket.Application - [EhourWebApplication] init: Wicket extensions initializer
+10-06@18:10:36 INFO  net.rrm.ehour.ui.EhourWebApplication - *** eHour version 1.4.3 started!
+10-06@18:10:36 INFO  org.apache.wicket.protocol.http.WebApplication - [EhourWebApplication] Started Wicket version 6.19.0 in DEPLOYMENT mode
+10-06@18:10:57 INFO  org.apache.wicket.Application - [EhourWebApplication] destroy: Wicket core library initializer
+10-06@18:10:57 INFO  org.apache.wicket.Application - [EhourWebApplication] destroy: DevUtils DebugBar Initializer
+10-06@18:10:57 INFO  org.apache.wicket.Application - [EhourWebApplication] destroy: Wicket extensions initializer
+10-06@18:10:57 INFO  org.springframework.web.context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Fri Oct 06 18:10:28 UTC 2017]; root of context hierarchy
+10-06@18:10:57 INFO  org.springframework.cache.ehcache.EhCacheManagerFactoryBean - Shutting down EhCache CacheManager
+10-06@18:10:57 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+10-06@18:19:00 INFO  net.rrm.ehour.ui.listener.EnvInitListener - EHOUR_HOME set to /opt/ehour
+10-06@18:19:00 INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+10-06@18:19:00 INFO  org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Oct 06 18:19:00 UTC 2017]; root of context hierarchy
+10-06@18:19:00 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-propertyconfig.xml]
+10-06@18:19:01 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-dbconnectivity.xml]
+10-06@18:19:01 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-service-ehourconfig.xml]
+10-06@18:19:01 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-service-scanner.xml]
+10-06@18:19:01 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-service.xml]
+10-06@18:19:01 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-security.xml]
+10-06@18:19:01 INFO  org.springframework.security.core.SpringSecurityCoreVersion - You are running with Spring Security Core 3.2.4.RELEASE
+10-06@18:19:01 INFO  org.springframework.security.config.SecurityNamespaceHandler - Spring Security 'config' module version is 3.2.4.RELEASE
+10-06@18:19:01 WARN  org.springframework.security.config.http.MatcherType - 'path-type' is deprecated. Please use 'request-matcher' instead.
+10-06@18:19:01 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'passwordEncoder': replacing [Generic bean: class [org.springframework.security.authentication.encoding.ShaPasswordEncoder]; scope=; abstract=false; lazyInit=true; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [context-service.xml]] with [Generic bean: class [org.springframework.security.authentication.encoding.ShaPasswordEncoder]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [context-security.xml]]
+10-06@18:19:01 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-cache.xml]
+10-06@18:19:01 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-wicket.xml]
+10-06@18:19:01 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-versioncheck.xml]
+10-06@18:19:01 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-service-scanner-nisum.xml]
+10-06@18:19:02 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-dbconnectivity-nisum.xml]
+10-06@18:19:02 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'org.springframework.transaction.config.internalTransactionAdvisor': replacing [Root bean: class [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; factoryMethodName=transactionAdvisor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]]
+10-06@18:19:02 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'taskScheduler': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=reminderConfig; factoryMethodName=taskScheduler; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [net/rrm/ehour/reminder/ReminderConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=timesheetLockConfig; factoryMethodName=taskScheduler; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [net/rrm/ehour/timesheet/service/TimesheetLockConfig.class]]
+10-06@18:19:02 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'configureScheduler': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=reminderConfig; factoryMethodName=configureScheduler; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [net/rrm/ehour/reminder/ReminderConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=timesheetLockConfig; factoryMethodName=configureScheduler; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [net/rrm/ehour/timesheet/service/TimesheetLockConfig.class]]
+10-06@18:19:02 INFO  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from file [/opt/ehour/conf/ehour.properties]
+10-06@18:19:02 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10-06@18:19:02 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'datasourceConfiguration' of type [class net.rrm.ehour.persistence.datasource.DatasourceConfiguration$$EnhancerBySpringCGLIB$$af6cfce9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10-06@18:19:03 INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+10-06@18:19:03 INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+10-06@18:19:03 INFO  net.rrm.ehour.persistence.datasource.SupportedDatabases - Using driver class: com.mysql.jdbc.Driver
+10-06@18:19:03 INFO  net.rrm.ehour.persistence.datasource.SupportedDatabases - DatasourceConfiguration{databaseType='mysql', driver='com.mysql.jdbc.Driver', url='jdbc:mysql://mysql:3306/ehour?zeroDateTimeBehavior=convertToNull&amp', username='*****', password='*****', checkoutTimeout=10000, connectionPool=c3p0}
+10-06@18:19:03 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'createDatasource' of type [class com.mchange.v2.c3p0.ComboPooledDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10-06@18:19:03 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'hibernateConfiguration' of type [class net.rrm.ehour.persistence.appconfig.HibernateConfiguration$$EnhancerBySpringCGLIB$$1662dbb0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10-06@18:19:03 INFO  net.rrm.ehour.persistence.appconfig.HibernateConfiguration - Using database type: mysql
+10-06@18:19:03 INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+10-06@18:19:03 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.7.Final}
+10-06@18:19:03 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+10-06@18:19:03 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+10-06@18:19:04 INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 10000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqx2bo9q1vedqnoci9wil|771992d9, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqx2bo9q1vedqnoci9wil|771992d9, idleConnectionTestPeriod -> 30, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://mysql:3306/ehour?zeroDateTimeBehavior=convertToNull&amp, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 10, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+10-06@18:19:05 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+10-06@18:19:05 INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+10-06@18:19:05 INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+10-06@18:19:05 INFO  org.hibernate.cache.spi.UpdateTimestampsCache - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+10-06@18:19:05 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+10-06@18:19:05 INFO  org.hibernate.cache.internal.StandardQueryCache - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+10-06@18:19:05 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+10-06@18:19:05 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 4.3.2.Final
+10-06@18:19:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.TimesheetEntry]; using defaults.
+10-06@18:19:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.BinaryConfiguration]; using defaults.
+10-06@18:19:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.ProjectAssignment]; using defaults.
+10-06@18:19:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.EmployeeType]; using defaults.
+10-06@18:19:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.UserDepartment]; using defaults.
+10-06@18:19:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Country]; using defaults.
+10-06@18:19:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.TimesheetLock]; using defaults.
+10-06@18:19:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.User]; using defaults.
+10-06@18:19:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Audit]; using defaults.
+10-06@18:19:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Location]; using defaults.
+10-06@18:19:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Configuration]; using defaults.
+10-06@18:19:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.TimesheetComment]; using defaults.
+10-06@18:19:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Customer]; using defaults.
+10-06@18:19:06 WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [net.rrm.ehour.domain.Region]; using defaults.
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.SchemaValidator - HHH000229: Running schema validator
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.SchemaValidator - HHH000102: Fetching database metadata
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.AUDIT
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [audit_id, user_id, success, audit_date, action, audit_action_type, user_fullname, page, parameters]
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.CONFIGURATION
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [config_value, config_key]
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.CONFIGURATION_BIN
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [config_value, metadata, config_key]
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.COUNTRY
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [country_name, country_id]
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.CUSTOMER
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [code, name, description, active, customer_id]
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.EMPLOYEE_TYPE
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [employee_type_name, employee_type_id]
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.LOCATION
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [location_name, region_id, location_id]
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.MAIL_LOG
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [mail_event, mail_log_id, mail_to, success, timestamp]
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.PROJECT
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [project_id, default_project, contact, name, description, active, project_code, project_manager, customer_id, billable]
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.PROJECT_ASSIGNMENT
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [assignment_id, date_start, role, project_id, user_id, hourly_rate, assignment_type_id, active, allotted_hours, notify_pm_on_overrun, date_end, allotted_hours_overrun]
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.PROJECT_ASSIGNMENT_TYPE
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [assignment_type_id, assignment_type]
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.REGION
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [region_id, region_name, country_id]
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.TIMESHEET_COMMENT
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [user_id, comment_date, comment]
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.TIMESHEET_ENTRY
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [assignment_id, hours, employee_type, timesheet_status, comment, update_date, location_id, entry_date]
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.TIMESHEET_LOCK
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [date_start, name, date_end, lock_id]
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.TIMESHEET_LOCK_EXCLUSION
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [user_id, lock_id]
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.USERS
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [approver, salt, department_id, last_name, active, password, employee_type, user_id, first_name, worklocation, email, country_id, username]
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.USER_DEPARTMENT
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [code, department_id, timezone, name, manager_user_id, parent_department_id]
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.USER_ROLE
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [role, name]
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.USER_TO_DEPARTMENT
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [department_id, user_id]
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: ehour.USER_TO_USERROLE
+10-06@18:19:06 INFO  org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [role, user_id]
+10-06@18:19:07 INFO  net.rrm.ehour.config.EhourConfigJdbc - Configuration loaded from database: net.rrm.ehour.config.EhourConfigJdbc@c03dbd1[
+  completeDayHours=8.0
+  isShowTurnover=true
+  currencySymbol=$
+  currencyCode=USD
+]
+10-06@18:19:07 INFO  net.rrm.ehour.config.TranslationDiscovery - Looking for translations in /opt/ehour/resources/i18n
+10-06@18:19:07 INFO  net.rrm.ehour.config.TranslationDiscovery - Found translation file for English (EhourWebApplication.properties)
+10-06@18:19:07 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService  'taskScheduler'
+10-06@18:19:08 INFO  net.rrm.ehour.timesheet.service.IScheduleTimesheetLock - Per configuration, Timesheet lock is disabled.
+10-06@18:19:08 INFO  org.springframework.ui.freemarker.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [Root WebApplicationContext: startup date [Fri Oct 06 18:19:00 UTC 2017]; root of context hierarchy] and template loader path [classpath:/emailTemplates/]
+10-06@18:19:08 INFO  org.springframework.cache.ehcache.EhCacheManagerFactoryBean - Initializing EhCache CacheManager
+10-06@18:19:08 INFO  org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [public final scala.collection.immutable.List net.rrm.ehour.reminder.IFindUsersWithoutSufficientHours.net$rrm$ehour$reminder$IFindUsersWithoutSufficientHours$$toWeekDays$1(scala.Tuple2)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+10-06@18:19:08 INFO  org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [public final boolean net.rrm.ehour.reminder.IFindUsersWithoutSufficientHours.net$rrm$ehour$reminder$IFindUsersWithoutSufficientHours$$coversReminderDays$1(scala.collection.immutable.List,org.joda.time.LocalDate,org.joda.time.LocalDate,scala.collection.immutable.List)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+10-06@18:19:08 INFO  org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [public final org.apache.log4j.Logger net.rrm.ehour.reminder.ReminderService.net$rrm$ehour$reminder$ReminderService$$LOGGER()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+10-06@18:19:08 INFO  org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [private final org.joda.time.format.DateTimeFormatter net.rrm.ehour.reminder.ReminderService.Formatter()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+10-06@18:19:08 INFO  org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [public final java.lang.String net.rrm.ehour.reminder.ReminderService.net$rrm$ehour$reminder$ReminderService$$determineMailEvent$1(int)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+10-06@18:19:08 INFO  org.springframework.aop.framework.CglibAopProxy - Unable to proxy method [public final boolean net.rrm.ehour.reminder.ReminderService.net$rrm$ehour$reminder$ReminderService$$hasMailBeenSent$1(java.lang.String,java.lang.String)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+10-06@18:19:08 INFO  net.rrm.ehour.reminder.IScheduleReminders - Per configuration, reminder mails are disabled.
+10-06@18:19:08 INFO  net.rrm.ehour.init.AdminAccountValidator - eHour already initialized
+10-06@18:19:08 INFO  net.rrm.ehour.init.EmptyPmRoleDeletor - Cleaning up users with ProjectManagement roles but without project...
+10-06@18:19:08 INFO  org.springframework.orm.hibernate4.HibernateTransactionManager - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource[ identityToken -> 1bqx2bo9q1vedqnoci9wil|771992d9, dataSourceName -> 1bqx2bo9q1vedqnoci9wil|771992d9 ]] of Hibernate SessionFactory for HibernateTransactionManager
+10-06@18:19:08 INFO  net.rrm.ehour.init.MissingPmRoleValidator - Finding and fixing users who are PM but don't have PM role (EHO-381)
+10-06@18:19:08 INFO  net.rrm.ehour.user.service.UserDepartmentMigrator - Migrating user departments in user to a more flexible structure...
+10-06@18:19:08 INFO  net.rrm.ehour.user.service.UserDepartmentMigrator - 0 users found with legacy user department, all converted.
+10-06@18:19:08 INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/eh/**'], [org.springframework.security.web.context.SecurityContextPersistenceFilter@530d0d51]
+10-06@18:19:09 INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8580 ms
+10-06@18:19:09 INFO  net.rrm.ehour.update.LatestVersionFetcherHttpImpl - Fetching latest version number of eHour release from http://ehour.nl/latest_version.txt
+10-06@18:19:09 INFO  org.apache.wicket.Application - [EhourWebApplication] init: Wicket core library initializer
+10-06@18:19:09 INFO  org.apache.wicket.RequestListenerInterface - registered listener interface [RequestListenerInterface name=IBehaviorListener, method=public abstract void org.apache.wicket.behavior.IBehaviorListener.onRequest()]
+10-06@18:19:09 INFO  org.apache.wicket.RequestListenerInterface - registered listener interface [RequestListenerInterface name=IFormSubmitListener, method=public abstract void org.apache.wicket.markup.html.form.IFormSubmitListener.onFormSubmitted()]
+10-06@18:19:09 INFO  org.apache.wicket.RequestListenerInterface - registered listener interface [RequestListenerInterface name=ILinkListener, method=public abstract void org.apache.wicket.markup.html.link.ILinkListener.onLinkClicked()]
+10-06@18:19:09 INFO  org.apache.wicket.RequestListenerInterface - registered listener interface [RequestListenerInterface name=IOnChangeListener, method=public abstract void org.apache.wicket.markup.html.form.IOnChangeListener.onSelectionChanged()]
+10-06@18:19:09 INFO  org.apache.wicket.RequestListenerInterface - registered listener interface [RequestListenerInterface name=IRedirectListener, method=public abstract void org.apache.wicket.IRedirectListener.onRedirect()]
+10-06@18:19:09 INFO  org.apache.wicket.RequestListenerInterface - registered listener interface [RequestListenerInterface name=IResourceListener, method=public abstract void org.apache.wicket.IResourceListener.onResourceRequested()]
+10-06@18:19:09 INFO  org.apache.wicket.Application - [EhourWebApplication] init: DevUtils DebugBar Initializer
+10-06@18:19:09 INFO  org.apache.wicket.Application - [EhourWebApplication] init: Wicket extensions initializer
+10-06@18:19:09 INFO  net.rrm.ehour.ui.EhourWebApplication - *** eHour version 1.4.3 started!
+10-06@18:19:09 INFO  org.apache.wicket.protocol.http.WebApplication - [EhourWebApplication] Started Wicket version 6.19.0 in DEPLOYMENT mode
